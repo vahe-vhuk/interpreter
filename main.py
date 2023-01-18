@@ -3,3 +3,6 @@ for i in range(20):
 
 print("duskabanica")
 print("alabalanica")
+
+
+print("isahak")
