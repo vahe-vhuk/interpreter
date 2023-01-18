@@ -7,4 +7,14 @@ print("alabalanica")
 
 print("isahak")
 
+
+
+
+print("ewwsrfvweveaf)
+print("ewwsrfvweveaf)
+print("ewwsrfvweveaf)
+print("ewwsrfvweveaf)
+print("ewwsrfvweveaf)
+print("ewwsrfvweveaf)
+print("ewwsrfvweveaf)
 print("ewwsrfvweveaf)
