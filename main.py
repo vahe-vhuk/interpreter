@@ -1,4 +1,4 @@
-for i in range(20):
+for i in range(200000):
     print(i+1)
 
 print("duskabanica")
