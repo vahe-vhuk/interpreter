@@ -1,0 +1,105 @@
+func print{a}|
+	output{a}
+
+
+func factorial{a}|
+	b = 1
+	for i = 1 to a|
+		b = b * i
+	return b
+
+func rad{x}|
+	ra = x * 3.141592658979 / 180
+	return ra
+
+func exp{x}|
+	e = 1
+	for i = 1 to 18|
+		c = factorial{i}
+		f = (x ** i) / c
+		e = e + f
+	return e
+
+
+func fibonachi{k}|
+	l = list{}
+	a = 1
+	b = 1
+	c = 1
+	for i = 0 to k|
+		l = append{a}
+		c = a + b
+		a = b
+		b = c
+	return l
+
+
+
+
+func sin{x}|
+	e = 0
+	for i = 0 to 25|
+		k = 2 * i + 1
+		c = factorial{k}
+		f = ((-1) ** i * x ** k) / c
+		e = e + f
+	return e
+
+
+func cos{x}|
+	e = 0
+	for i = 0 to 25|
+		k = 2 * i
+		c = factorial{k}
+		f = ((-1) ** i * x ** k) / c
+		e = e + f
+	return e
+
+func tg{x}|
+	si = sin{x}
+	co = cos{x}
+	tan = si / co
+	return tan
+
+func ctg{x}|
+	tan = tg{x}
+	cot = 1 / tan
+	return cot
+
+
+func sec{x}|
+	co = cos{x}
+	se = 1 / si
+	return se
+
+
+func cosec{x}|
+	si = sin{x}
+	cose = 1 / si
+	return cose
+
+func arcsin{x}|
+	e = 0
+	for i = 0 to 35|
+		k = 2 * i
+		f1 = factorial{i}
+		f2 = factorial{k}
+		l = k + 1
+		e = e + ((f2 * x ** l) / (4 ** i * f1 ** 2 * l))
+	return e
+
+
+func arccos{x}|
+	e = arcsin{x}
+	k = pi / 2 - e
+	return k
+
+func arctg{x}|
+	e = 0
+	for i = 1 to 35|
+		l = 2 * i - 1
+		e = e + (-1 ** (i - 1) * x ** l) / l
+	return e
+k = exp{1}
+
+output{k}
